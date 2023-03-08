@@ -9,7 +9,7 @@ pipeline{
      stages{
          stage("Git Checout"){
               steps{
-                  git credentialsId: '8f7e0a1a-7d1b-4948-af5f-72d2e5e09ff2', url: 'https://github.com/rayza27/ray-mavendemo.git'
+                  git branch: 'main', credentialsId: '8f7e0a1a-7d1b-4948-af5f-72d2e5e09ff2', url: 'https://github.com/rayza27/ray-mavendemo'
               }
           }
           stage("Maven-Build"){
